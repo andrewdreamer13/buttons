@@ -1,0 +1,122 @@
+body{
+  background-color: rgb(104, 216, 244);
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-box{
+  position: relative;
+  width: 600px;
+  padding: 50px 20px;
+  background-color: rgb(173, 175, 176);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-costume{
+  position: relative;
+  width: 250px;
+  height: 70px;
+  margin-bottom: 20px;
+  /* background-color: #fff; */
+}
+.button-one {
+  position: relative;
+ width:100%;
+ height:100%;
+ 
+  border-radius: 35px;
+  z-index: 2;
+  background-color: rgb(62, 111, 127);
+  transition: all .3s;
+  box-shadow: inset 0 0 20px rgb(44, 45, 45),inset 0 0 10px rgb(151, 155, 155);
+}
+.click{
+  transform: translateY(8px);
+  transition: all .3s;
+}
+.button-costume::after{
+  content:'';
+  position: absolute;
+  left: 0px;
+  bottom: -8px;
+  width: 100%;
+  height: 100%;
+   border-radius: 35px;
+   background-color: rgb(43, 78, 89);
+   z-index: 1;
+ }
+ /* ============================== */
+ .button-two{
+width: 250px;
+height: 70px;
+margin-bottom: 50px;
+border-radius: 35px;
+background-color: rgb(86, 85, 85);
+transition: all .3s;
+box-shadow:0 8px 0 rgb(57, 57, 57),inset 0 0  20px rgb(8, 8, 8),inset 0 0  40px rgb(52, 51, 51),inset 0 0  60px rgb(86, 85, 85);
+ }
+ .click-two{
+  transform: translateY(8px);
+  box-shadow:0 0 0 rgb(57, 57, 57),inset 0 0  20px rgb(8, 8, 8),inset 0 0  40px rgb(52, 51, 51),inset 0 0  60px rgb(86, 85, 85);
+  transition: all .3s;
+}
+/* ==================================== */
+.button-three{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-color: rgb(247, 198, 126);
+  transition: all .3s;
+  box-shadow: inset 0 0 30px rgb(224, 121, 12);
+}
+.button-three-transform{
+  transform: scale(.9);
+  transition: all .3s;
+}
+.button-three-animation{
+  animation: shadow 1.5s linear infinite;
+}
+@keyframes shadow {
+  0%{
+    box-shadow:0 0 0 rgb(243, 186, 102);
+  
+  }
+  12.5%{
+    box-shadow: 0 0 30px rgb(243, 174, 70);
+    /* transform: scale(.7); */
+  }
+  25%{
+    box-shadow: 0 0 30px rgb(243, 174, 70),0 0 60px rgb(243, 148, 70);
+    /* transform: scale(.8); */
+  }
+  37.5%{
+    box-shadow: 0 0 30px rgb(243, 174, 70),0 0 60px rgb(243, 148, 70),0 0 90px rgb(242, 116, 38);
+    /* transform: scale(.9); */
+  }
+  50%{
+    box-shadow:0 0 30px rgb(243, 174, 70),0 0 60px rgb(243, 148, 70),0 0 90px rgb(242, 116, 38),0 0 120px rgb(247, 101, 33);
+    /* transform: scale(1); */
+  }
+  62.5%{
+    box-shadow: 0 0 30px rgb(243, 174, 70),0 0 60px rgb(243, 148, 70),0 0 90px rgb(242, 116, 38);
+    /* transform: scale(.9); */
+  }
+  75%{
+    box-shadow: 0 0 30px rgb(243, 174, 70),0 0 60px rgb(243, 148, 70);
+    /* transform: scale(.8); */
+  }
+  87.5%{
+    box-shadow: 0 0 30px rgb(243, 174, 70);
+    /* transform: scale(.7); */
+  }
+  100%{
+    box-shadow:0 0 0 transparent;
+    /* transform: scale(.6); */
+  }
+}
